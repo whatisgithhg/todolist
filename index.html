@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link href="app.css" rel="stylesheet">
+    </head>
+    <body>
+    <div>
+        <div class="listbox">
+            <div class="todolist">🙆TO DO LIST🙆</div>
+            
+            <input type="text" id="input">
+            <button type="button" id="button">ADD</button>
+            <marquee><img class="cloud2" src="구름2.jpg" alt="sweet colorful pixel clouds"></marquee>
+            <ul id="list"></ul>
+        </div>
+        
+        <div class="otherbox">
+            <div class="box1">
+                <h1 class="clock"></h1>
+            </div>
+            <form class="box2">
+                <select id="myselect" onchange="init()">
+                <option value="행복">How are you today?</option>
+                <option value="나른">행복</option> 
+                <option value="촉박">촉박</option> 
+                <option value="피곤">피곤</option> 
+                <option value="우울">우울</option> 
+                
+                </select>
+            </form>
+            <marquee><img class= "cloud1" src="구름1.jpg" alt="sweet colorful pixel clouds"></marquee>
+            <div class="calandar">
+                <iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23E67C73&amp;ctz=Asia%2FSeoul&amp;src=aGFlaW5nZXVtQGdtYWlsLmNvbQ&amp;src=bzMwMnQ4NTQzdTljZ3FmZDkwbzdpcmllYjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%234285F4&amp;color=%23009688&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showDate=0" style="border-width:0" width="676" height="300" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+        <script src="clock.js"></script>
+        <script src="mood.js"></script>
+        <script src="todolist.js"></script>
+    </body>
+</html>
